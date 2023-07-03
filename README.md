@@ -26,9 +26,9 @@ Siga as etapas abaixo para configurar e iniciar a máquina virtual:
    cd projeto-docker-container-nginx
 
 3. Inicie a máquina virtual:
-  ```shell
+   ```shell
    vagrant up
-  ```
+   ```
 
 Agora a máquina virtual será criada e inicializada de acordo com as configurações fornecidas. Você pode acessar a máquina virtual usando o comando `vagrant ssh`.
 
