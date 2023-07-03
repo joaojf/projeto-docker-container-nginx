@@ -1,0 +1,22 @@
+Vagrant.configure("2") do |config|
+  # Variáveis
+  vm_box =  "ubuntu/focal64"
+  vm_memory = "1024"
+  vm_cpus = "1"
+
+  # Confg vm
+  config.vm.box = vm_box
+
+  # Confg network
+  config.vm.network "public_network"
+
+  # Confg provider
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = vm_memory
+    vb.cpus = vm_cpus
+  end
+
+  # Confg provision
+  config.vm.provision "shell", path: "script.sh"
+
+end
